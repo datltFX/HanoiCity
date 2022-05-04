@@ -1,0 +1,212 @@
+* { box-sizing: border-box; }
+/*menu*/ 
+body {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}     
+nav{
+    height: 60px;
+    background-color: #556270;
+}
+ul {
+    list-style-type: none;
+    padding: 15px 0;
+    }
+li 
+{
+float: left;
+}
+.menu1
+{
+    float:left;
+    padding-left: 2%;
+}
+.menu2{
+    float:right; 
+    padding-right: 2%;
+}
+li a{
+    padding:10px 10px;
+    color:white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align:center;
+    text-decoration: none;
+}
+/*main*/
+#banner{
+    padding-top: 5%;
+    padding-left: 4%; 
+    padding-bottom: 5%;
+    border-bottom: solid 1px #ddddddef;
+}
+#main-content{
+    padding-top: 5%;
+    padding-left: 4%;
+    padding-bottom: 5%;
+ }
+#tableJPG {
+    margin: 0;
+    padding-top: 2.5%;
+}
+main div img
+{
+    width: 100%;
+    padding-bottom: 15%;
+}
+/*footer*/
+footer{
+    padding-left: 4%;
+}
+footer #col{
+    padding-bottom: 15%; 
+}
+footer #col1{
+    padding-bottom: 15%; 
+}
+footer #col2{
+    padding-bottom: 15%; 
+}
+footer h3{
+    font-weight: bold;
+    font-size:xx-large;
+    padding-bottom: 5%; 
+}
+footer p{
+    padding-bottom: 3%; 
+}
+h1, h2{
+    padding-top: 5%;
+    padding-bottom: 2.5%; 
+    font-weight: bold;
+    font-size:xx-large;
+}
+@media only screen and (min-width: 768px)
+/*For tablet:*/
+{
+* { box-sizing: border-box; }  
+#banner{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+#main-content{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+main div img
+{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+footer{
+    padding-left: 2%;
+}
+footer #col{
+    padding-bottom: 8%; 
+}
+footer #col1{
+    padding-bottom: 8%; 
+}
+footer #col2{
+    padding-bottom: 8%; 
+}
+footer h3{
+    padding-bottom: 1%; 
+}
+footer p{
+    padding-bottom: 0; 
+}
+}
+
+@media only screen and (min-width: 992px)
+/* For desktop: */
+{
+* { box-sizing: border-box; }  
+/*menu*/
+nav{
+    width: 100%;
+    background-color: #fefefe;
+}
+ul {
+    margin: 20px 10px;
+    padding: 15px 0;
+    }
+li a{
+    color:#797685;
+}
+/*main*/
+main{    
+    background-color: #f0f0f0;
+    border: none;
+}
+#banner{
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png) ;
+    background-size:cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+#banner h1{
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+}
+#banner p{
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    color: white;
+    font-family:sans-serif;
+    font-size: 20px;
+}
+#main-content{
+    padding-left: 2.5%;
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+#main-content h2,p{
+    font-family:sans-serif;
+    padding-top: 0;
+    padding-bottom: 0; 
+ }
+main div img
+{
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 10%;
+}
+#tableJPG {
+    padding-top:2%;
+    border-bottom: solid 1px #ddddddef;
+}
+/*footer*/
+footer{
+    background-color: #f7f7f7;
+    font-family:sans-serif;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-bottom: 2%;
+}
+footer #col{
+    padding-bottom: 2%; 
+}
+footer #col1{
+    padding-left: 2.8%;  
+    padding-bottom: 2%; 
+}
+footer #col2{
+    padding-bottom: 2%; 
+}
+footer h3{
+    font-weight: bold;
+    font-size: x-large;
+}
+footer a{
+    color: #1ee5ff;
+} 
+}
