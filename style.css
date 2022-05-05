@@ -4,69 +4,96 @@ body {
     width: 90%;
     height: auto;
     margin: auto;
-}     
-nav{
-    height: 60px;
-    background-color: #556270;
+} 
+.container{width:100%;} 
+.carousel-inner img{width:100%;}
+.carousel-inner h3{
+font-family: 'Varela Round', sans-serif;
 }
-ul {
-    list-style-type: none;
-    padding: 15px 0;
+.carousel-inner p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.1em;
     }
-li 
-{
-float: left;
-}
-.menu1
-{
-    float:left;
-    padding-left: 2%;
-}
-.menu2{
-    float:right; 
-    padding-right: 2%;
-}
-li a{
-    padding:10px 10px;
-    color:white;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    text-align:center;
-    text-decoration: none;
-}
 /*main*/
-#banner{
-    padding-top: 5%;
-    padding-left: 4%; 
-    padding-bottom: 5%;
-    border-bottom: solid 1px #ddddddef;
-}
-#main-content{
-    padding-top: 5%;
+#SummaryHanoi{
+    padding-top: 1%;
     padding-left: 4%;
-    padding-bottom: 5%;
- }
-#tableJPG {
-    margin: 0;
-    padding-top: 2.5%;
+    padding-right: 4%;
+    padding-bottom: 1%;
 }
+#SummaryHanoi h2{
+text-align: center;
+}
+#SummaryHanoi a{
+    font-family: 'Oswald', sans-serif;
+}
+#SummaryHanoi p{
+    padding-bottom: 2%;
+    }
+#main-content{
+    padding-top: 1%;
+    text-align: center;
+    padding-bottom: 4%;
+ }
+ #tableJPG {
+    margin: 0;
+    padding-top: 2%;
+}
+/*---------------------------------------Image Hover Overlay--------------------------------------------------*/
+.image_effect {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .image_effect:hover .image {
+    opacity: 0.65;
+  }
+  
+  .image_effect:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-family:sans-serif;
+    font-size: 1.15em;
+    padding: 1% 0;
+  }
+/*-----------------------------------------------------end------------------------------------------*/
 main div img
 {
     width: 100%;
+    height: 100%;
     padding-bottom: 15%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
-/*footer*/
+/*end*/
+/*-------------------------------------------------footer-----------------------------------*/
 footer{
-    padding-left: 4%;
-}
-footer #col{
-    padding-bottom: 15%; 
-}
-footer #col1{
-    padding-bottom: 15%; 
-}
-footer #col2{
-    padding-bottom: 15%; 
+    padding-left: 1%;
+    text-align: center;
 }
 footer h3{
     font-weight: bold;
@@ -82,18 +109,24 @@ h1, h2{
     font-weight: bold;
     font-size:xx-large;
 }
+footer a{
+    color: black;
+}
 @media only screen and (min-width: 768px)
-/*For tablet:*/
+/*-----------------------------------------For tablet:---------------------------------------------------*/
 {
-* { box-sizing: border-box; }  
-#banner{
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-}
+    *{ box-sizing: border-box; }  
+#SummaryHanoi{
+        padding-top: 1%;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 1%;
+    }
 #main-content{
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-}
+        padding-top: 1%;
+        padding-left: 3%;
+        padding-bottom: 3%;
+     }
 main div img
 {
     padding-left: 1%;
@@ -101,72 +134,36 @@ main div img
 }
 footer{
     padding-left: 2%;
-}
-footer #col{
-    padding-bottom: 8%; 
-}
-footer #col1{
-    padding-bottom: 8%; 
-}
-footer #col2{
-    padding-bottom: 8%; 
+    background-color: #f7f7f7;
 }
 footer h3{
-    padding-bottom: 1%; 
-}
-footer p{
-    padding-bottom: 0; 
+    font-weight: bold;
+    font-size: x-large;
 }
 }
 
 @media only screen and (min-width: 992px)
-/* For desktop: */
+/*-------------------------------------For desktop:---------------------------------------*/
 {
 * { box-sizing: border-box; }  
 /*menu*/
-nav{
-    width: 100%;
-    background-color: #fefefe;
-}
-ul {
-    margin: 20px 10px;
-    padding: 15px 0;
-    }
-li a{
-    color:#797685;
-}
 /*main*/
-main{    
-    background-color: #f0f0f0;
-    border: none;
+#SummaryHanoi{
+    padding-top: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 1%;
 }
-#banner{
-    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png) ;
-    background-size:cover;
-    width: 100%;
-    height: 500px;
-    position: relative;
+#SummaryHanoi p, a{
+    font-size:1.2em;
 }
-#banner h1{
-    position: absolute;
-    top: 15%;
-    left: 6%;
-    color: white;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 48px;
-}
-#banner p{
-    position: absolute;
-    top: 40%;
-    left: 6%;
-    color: white;
-    font-family:sans-serif;
-    font-size: 20px;
+.panel-body{
+    font-size:1.2em;  
 }
 #main-content{
-    padding-left: 2.5%;
-    padding-top: 4%;
-    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-bottom: 2%;
 }
 #main-content h2,p{
     font-family:sans-serif;
@@ -176,37 +173,28 @@ main{
 main div img
 {
     width: 100%;
+    height: 100%;
     padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 10%;
+    padding-right: 3%;
+    padding-bottom: 5%;
 }
 #tableJPG {
     padding-top:2%;
-    border-bottom: solid 1px #ddddddef;
+   
 }
 /*footer*/
 footer{
-    background-color: #f7f7f7;
     font-family:sans-serif;
     padding-top: 2%;
-    padding-left: 1%;
+    padding-left: 2%;
     padding-bottom: 2%;
 }
-footer #col{
-    padding-bottom: 2%; 
+.row{
+    margin-left: 0%;
 }
-footer #col1{
-    padding-left: 2.8%;  
-    padding-bottom: 2%; 
-}
-footer #col2{
-    padding-bottom: 2%; 
-}
+
 footer h3{
     font-weight: bold;
     font-size: x-large;
 }
-footer a{
-    color: #1ee5ff;
-} 
 }

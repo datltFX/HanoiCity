@@ -1,67 +1,263 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <meta name="keywords" content="Hà Nội">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="style.css">
-        <title>Project3</title>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+        <title>HanoiCity</title>
     </head>
-    <body class="container">
-       <nav class="row">
-            <ul>
-                <div class="menu1">
-                    <li ><a href="#">BRAND</a></li>
-                    <li ><a href="#">BROWSE</a></li>
-                </div>
-                <div class="menu2">
-                    <li><a href="#" target="_blank">SIGN UP</a></li>
-                    <li><a href="#" target="_blank">LOG IN</a></li>
-                    <li><a href="#">HELP</a></li>
-                </div>
-            </ul>
-        </nav>
-        <main  class="row">
-            <div id="banner">
-                <h1>Find a place to stay.</h1>
-                <p>Rent from people in over 34000 cities and 192 countries.</p>
+    <body>
+        <!---------------------------------------------- Navigration -------------------------------------------------------->       
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Hà Nội</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Trang chủ</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="Place.html">Khám phá <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Place.html">Di sản - Di tích</a></li>
+            <li><a href="Place.html">Làng nghề</a></li>
+            <li><a href="Place.html">Sinh thái </a></li>
+            <li><a href="Place.html">Giải trí - thể thao</a></li>
+          </ul>
+        </li>
+        <li><a href="Food.html">Ẩm thực</a></li>
+        <li><a href="Thư viện ảnh.html">Ảnh</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="SignUp.html"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
+        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+       <!-------------------------------------------------------- Carousel --------------------------------------------------->
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+         <!-- Indicators -->
+         <ol class="carousel-indicators">
+             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+             <li data-target="#myCarousel" data-slide-to="1"></li>
+             <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+  
+        <div class="item active">
+          <img src="images/0-1.Bắc bộ phủ.jpg" alt="Bắc Bộ Phủ">
+          <div class="carousel-caption">
+            <h3>Bắc Bộ Phủ - Ba Đình</h3>
+            <p>Trung tâm quyền lực lãnh tụ quốc gia</p>
+          </div>
+        </div>
+  
+        <div class="item">
+          <img src="images/0-2.Phố Cổ.jpg" alt="Phố Cổ">
+          <div class="carousel-caption">
+            <h3>Phố Cổ - Hoàn Kiếm</h3>
+            <p>Văn hóa, cuộc sống, con người Hà Thành trong ngàn năm lịch sử</p>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="images/0-3.Hàm cá mập.jpg" alt="Hàm Cá Mập">
+          <div class="carousel-caption">
+            <h3>Hàm Cá Mập - Hoàn Kiếm</h3>
+            <p> View đẹp trên cao tại phố đi bộ Hà Nội</p>
+          </div>
+        </div>
+    
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+         </div>
+        </div> 
+        <!----------------------------------------------------------Accordion collapse--------------------------------------------> 
+<main class="row">
+        <div class="container" id="SummaryHanoi">
+          <h2>Tổng quan</h2>
+          <p>Hà Nội là thủ đô hơn 1000 năm tuổi, có lịch sử lâu đời, truyền thống văn hóa đa dạng và giàu bản sắc, Hà Nội thực sự là một trung tâm du lịch lớn của Việt Nam. Hà Nội luôn là một trong những địa điểm thu hút nhiều khách du lịch nội địa và quốc tế. Hà Nội đứng đầu về số lượng di tích Việt Nam với 3840 di tích trên tổng số gần 40.000 di tích Việt Nam (trong đó có 1164 di tích cấp quốc gia); Hà Nội hiện là địa phương sở hữu nhiều danh hiệu UNESCO ở Việt Nam nhất.</p>
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Lịch sử, tâm linh</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">Nhiều di tích lịch sử nổi tiếng như: Thành cổ Hà Nội, Tháp Rùa nằm giữa Hồ Hoàn Kiếm, Khu phố cổ Hà Nội, Ô Quan Chưởng, Thành Cổ Loa, Thăng long tứ trấn, Văn Miếu-Quốc Tử Giám,...
+                  Hà Nội có nhiều đền, chùa như: Chùa Một Cột, Chùa Quán Sứ, Chùa Trấn Quốc,... </div>
+              </div>
             </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Ẩm thực</a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">Về ẩm thực, Người Hà Nội có truyền thống ẩm thực lâu đời, tổng hợp những tinh túy từ quê hương những người lên Hà Nội lập nghiệp mà mang theo cái hồn quê trong món ăn, đồ uống. Sống qua nhiều thế hệ ở Hà Nội, họ góp phần hình thành một nền ẩm thực Hà Nội phong phú.
+                  Một số món ăn đặc trưng của người Hà Nội: Bánh cốm, Bánh cuốn Thanh Trì, Bánh tôm Hồ Tây, Bia hơi Hà Nội, Bún chả, Bún ốc, Bún thang, Chả cá Lã Vọng, Cốm làng Vòng, Phở Hà Nội...</div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Giải trí, nghỉ dưỡng</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">Đây là loại hình du lịch phát triển khá mạnh sau khi Hà Nội mở rộng. Những lợi thế phát triển du lịch của hệ thống núi Ba Vì và nhiều hồ nước nhân tạo có diện tích mặt nước lớn như hồ Suối Hai, hồ Đồng Mô, hồ Quan Sơn… trong những năm qua nhiều khu, điểm du lịch sinh thái, nghỉ dưỡng cuối tuần được hình thành và phát triển như: Khu du lịch Thác Đa; Đầm Long - Bằng Tạ; suối khoáng Tản Đà; Asean; Ao Vua; Khoang Xanh - Suối Tiên; Thiên Sơn - Suối Ngà... góp phần đáp ứng nhu cầu nghỉ dưỡng cuối tuần, vui chơi giải trí, hoạt động thể thao cho khách du lịch.</div>
+              </div>
+            </div>
+          </div> 
+        </div>
+<!--------------------------------------------------------------------end--------------------------------------------------->
             <div class="row" id="main-content">
-                <h2>Neighborhood Guides</h2>
-                <p>Not sure where to stay? We've created neighborhood guides for cities all around the world.</p>
+                <h2>Điểm đến phổ biến</h2>
+                <p></p>
             </div>
             <div class="row" id="tableJPG">
-                <div class="col-lg-4 col-md-6">
-                    <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/mexico-city.png">
-                    <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/ny.png">
+                <div class="col-md-4 col-sm-6">
+                  <div class="image_effect">
+                    <img src="images/1.Lăng bác.png" alt="Lăng Bác" class="image">
+                    <div class="middle">
+                      <div class="text">
+                      <h3>Lăng Bác</h3>
+                      <p>Nơi giữ gìn thi hài Bác - vị cha già đáng kính của dân tộc.</p>
+                       <a class="info" href="Place.html">XEM THÊM</a>
+                      </div>
+                    </div>
+                  </div> 
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/tokyo.png">
-                    <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/paris.png">
+                <div class="col-md-4 col-sm-6">                
+                <div class="image_effect">
+                  <img src="images/2.khuê văn các.jpg" alt="Văn Miếu" class="image">
+                  <div class="middle">
+                    <div class="text">
+                    <h3>Văn Miếu</h3>
+                    <p>Tinh hoa giáo dục - thắp sáng truyền thống hiếu học.</p>
+                     <a class="info" href="Place.html">XEM THÊM</a>
+                    </div>
+                  </div>
+                </div>  
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/invite.png">
+                <div class="col-md-4 col-sm-6">
+                  <div class="image_effect">
+                    <img src="images/3.hồ gươm.jpg" alt="Hồ Gươm" class="image">
+                    <div class="middle">
+                      <div class="text">
+                      <h3>Hồ Gươm</h3>
+                      <p>Khát khao hòa bình, văn tài võ trị của dân tộc.</p>
+                       <a class="info" href="Place.html">XEM THÊM</a>
+                      </div>
+                    </div>
+                  </div> 
+                </div> 
+                <div class="col-md-4 col-sm-6">                
+                  <div class="image_effect">
+                    <img src="images/4.Hồ tây.jpg" alt="Hồ Tây" class="image">
+                    <div class="middle">
+                      <div class="text">
+                      <h3>Hồ Tây</h3>
+                      <p>Hồ nước ngọt lớn nhất trong nội đô Thành Phố Hà Nội.</p>
+                       <a class="info" href="Place.html">XEM THÊM</a>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="image_effect">
+                    <img src="images/5.Đồng Mô.jpg" alt="Đồng Mô" class="image">
+                    <div class="middle">
+                      <div class="text">
+                      <h3>Đồng Mô</h3>
+                      <p>Phong cảnh nên thơ giữa Ba Vì, Hà Nội.</p>
+                       <a class="info" href="Place.html">XEM THÊM</a>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-md-4 col-sm-6">  
+                  <div class="image_effect">
+                    <img src="images/6.Oceanpark.jpg" alt="Ocean park" class="image">
+                    <div class="middle">
+                      <div class="text">
+                      <h3>Ocean park</h3>
+                      <p>Biển hồ nước mặn nhân tạo lớn nhất Việt Nam.</p>
+                       <a class="info" href="Place.html">XEM THÊM</a>
+                      </div>
+                    </div>
+                  </div> 
                 </div>
             </div>
-        </main>
-        <footer class="row">
-            <div class="col-lg-4" id="col">
-                <h3>Travel</h3>
-                <p>From apartments and rooms to treehouses and boats: stay in unique spaces in 192 countries.</p>
-                <a href="#">See how to travel on Airbnb</a>
-            </div>
-            <div class="col-lg-4" id="col1">
-                <h3>Host</h3>
-                <p>Renting out your unused space clould pay your bill or fund your next vacation.</p>
-                <a href="#">Learn more about hosting</a>
-            </div>
-            <div class="col-lg-4" id="col2">
-                <h3>Trust and Safety</h3>
-                <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
-                <a href="#">Learn about trust at Airbnb</a>
-            </div>
-        </footer>
-    </body>
+</main>
+        <!-----------------------------------------end----------------------------------------->
+<!------------------------------footer--------------------------------------->
+<footer class="row">
+  <div class="col-md-3 col-sm-3" id="col">
+    <h3>Giới Thiệu</h3>
+    <p>
+      Hà Nội - Vùng đất hội nhập và hội tụ những giá trị văn hóa; vùng tài nguyên di sản giàu có nhất, đa dạng nhất của đất nước.
+    </p>
+</div>
+  <div class="col-md-3 col-sm-3" id="col1">
+      <h3>Thông tin</h3>
+      <p>
+        <a href="#">Câu Hỏi</a>
+      </p>
+      <p>
+        <a href="#">Tin Tức</a>
+      </p>
+      <p>
+        <a href="#">Tuyển Dụng</a>
+      </p>
+  </div>
+  <div class="col-md-3 col-sm-3" id="col2">
+      <h3>Hỗ Trợ</h3>
+      <p>
+        <a href="#">Cài Đặt</a>
+      </p>
+      <p>
+        <a href="#">Bảo Mật</a>
+      </p>
+      <p>
+        <a href="#">Trợ Giúp</a>
+      </p>
+  </div>
+  <div class="col-md-3 col-sm-3" id="col3">
+      <h3>Liên Lạc</h3>
+      <p> Hà Nội, Việt Nam</p>
+      <p>
+        Hanoicity@gmail.com
+      </p>
+      <p>Phone: + 0123456789</p>
+  </div>
+</footer>
+</body>
 </html>
